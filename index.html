@@ -57,29 +57,45 @@ layout: compress
     }
   </style>
   </head>
-  <body>
-   <div class="grid-image">
-    <figure>
-      <a href="http://gaidas2022.org/spring">
-        <img style="border:1px solid black;" alt="" src="images/시립대 GeoAI 포스터220420_1.png"/>
-      </a>
+  <body class="demo-1">
+  <div class="container">
+      <header class="codrops-header">
+        <h1>GeoAI데이터학회 학술대회 안내 </h1>
 
-      <a href="http://gaidas2022.org/spring">
-        <img alt="" src="images/테스트 버튼.png"/>
-      </a>
-    </figure>
-    <figure>
-      <a href="http://gaidas2022.org/fall">
-        <img style="border:1px solid black;" alt="" src="images/준비중.gif"/>
-      </a>
+      </header>
+      <div class="content">
+          <!-- trianglify pattern container -->
+          <div class="pattern pattern--hidden"></div>
+          <!-- cards -->
+          <div class="wrapper">
+              {% for post in paginator.posts %}
+              <div class="card" data-id="{{ post.id }}">
+                  <div class="card__container card__container--closed">
+                      <div class="grid-image">
+                        <figure>
+                          <a href="http://gaidas2022.org/spring">
+                            <img style="border:1px solid black;" alt="" src="images/시립대 GeoAI 포스터220420_1.png"/>
+                          </a>
 
-      <a href="http://gaidas2022.org/fall">
-        <img alt="" src="images/테스트 버튼.png"/>
-      </a>
-    </figure>
+                          <a href="http://gaidas2022.org/spring">
+                            <img alt="" src="images/테스트 버튼.png"/>
+                          </a>
+                        </figure>
+                        <figure>
+                          <a href="http://gaidas2022.org/fall">
+                            <img style="border:1px solid black;" alt="" src="images/준비중.gif"/>
+                          </a>
+                          <a href="http://gaidas2022.org/fall">
+                            <img alt="" src="images/테스트 버튼.png"/>
+                          </a>
+                        </figure>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      <!-- /container -->
   </div>
   </body>
 </html>
-
-
-
+  
