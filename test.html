@@ -7,6 +7,9 @@
     <link rel="favicon" href="파비콘.ico">
     <title>GeoAI데이터학회 | 학술대회 안내페이지</title>
   <style>
+  a {
+    text-decoration-line: none;
+  }
   h1 {
     position: relative;
     padding: 1rem 0.5rem;
@@ -24,18 +27,44 @@
     background-image: linear-gradient(to left, #00b0ff 0%, #00e676 100%);
   }
   body {
+    font-family: sans-serif;
+    background: rgb(236, 240, 243);
     margin: 0 auto;
     width: 1500px;
   }
+  .btn {
+    width: 700px;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    min-width: 150px;
+    padding 15px 10px;
+    background: rgb(236, 240, 243);
+    border: none;
+    border-radius: 25px;
+    color: rgb(185, 194, 212);
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, 0.9),
+      7px 7px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+   
+  .btn:hover {
+    box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.9),
+      inset 7px 7px 20px 0 rgba(0, 0, 0, 0.1);
+  }
   div.gallery {
     margin: 20px;
-    border: 1px solid #ccc;
+    border: none;
     float: left;
     width: 700px;
   }
 
   div.gallery:hover {
-    border: 1px solid #777;
+    border: none;
   }
 
   div.gallery img {
@@ -49,6 +78,9 @@
   }
   @media (max-width:1500px) {
     body {
+      font-family: sans-serif;
+      background: rgb(236, 240, 243);
+      display
       margin: 0 auto;
       width: 700px;
     }
@@ -58,18 +90,18 @@
     <h1>GeoAI데이터학회 학술대회 안내페이지</h1>
     <div class="gallery">
       <a href="http://gaidas2022.org/spring">
-        <figure>
+        <div>
             <img style="border:1px solid black;" alt="" src="images/시립대 GeoAI 포스터220420_1.png">
-            <img alt="" src="images/테스트 버튼.png">
-        </figure>
+          <button class="btn">2022 GAIADS 춘계워크샵 홈페이지</button>
+        </div>
       </a>
     </div>
     <div class="gallery">
       <a href="http://gaidas2022.org/fall">
-        <figure>
+        <div>
             <img style="border:1px solid black;" alt="" src="images/준비중.gif">
-            <img alt="" src="images/테스트 버튼.png">
-        </figure>
+            <button class="btn">2022 GAIDAS 추계학술대회 홈페이지</button>
+        </div>
       </a>
     </div>
   </body>
