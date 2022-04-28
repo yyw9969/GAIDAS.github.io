@@ -1,4 +1,4 @@
-<!-- ---
+---
 ---
 <ul class="list pa0">
   {% for post in site.posts %}
@@ -10,7 +10,7 @@
     </a>
   </li>
   {% endfor %}
-</ul> -->
+</ul>
 <!doctype html>
 <html lang="ko">
   <head>
@@ -18,38 +18,38 @@
   <meta charset="utf-8">
     <title>HTML</title>
   <style>
-  /* CSS */
-  .Blog .grid-image {
-      display:flex;
-      flex-wrap:wrap;
-      align-items:flex-start;
-      margin:20px 0;
-  }
-  .Blog .grid-image img {
-      width:calc(33.333% - 10px);
-      margin:0 15px 15px 0;
-  }
-  .Blog .grid-image img:nth-of-type(3n),
-  .Blog .grid-image img:last-child {
-      margin-right:0;
-  }
-  @media screen and (max-width:700px){
+    /* CSS */
+    .Blog .grid-image {
+        display:flex;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        margin:20px 0;
+    }
     .Blog .grid-image img {
-      width:calc(50% - 15px);
+        width:calc(33.333% - 10px);
+        margin:0 15px 15px 0;
     }
-  }
-  @media screen and (max-width:480px){
-    .Blog .grid-image img:nth-of-type(2n) {
-      margin-right:0;
+    .Blog .grid-image img:nth-of-type(3n),
+    .Blog .grid-image img:last-child {
+        margin-right:0;
     }
-    .Blog .grid-image img:nth-of-type(3n) {
-      margin-right:15px;
+    @media screen and (max-width:700px){
+      .Blog .grid-image img {
+        width:calc(50% - 15px);
+      }
     }
-  }
-</style>
+    @media screen and (max-width:480px){
+      .Blog .grid-image img:nth-of-type(2n) {
+        margin-right:0;
+      }
+      .Blog .grid-image img:nth-of-type(3n) {
+        margin-right:15px;
+      }
+    }
+  </style>
   </head>
   <body>
-  <div class="grid-image">
+   <div class="grid-image">
     <figure>
       <a href="http://gaidas2022.org/spring">
         <img style="border:1px solid black;" alt="" src="images/시립대 GeoAI 포스터220420_1.png"/>
