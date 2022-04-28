@@ -1,0 +1,25 @@
+# ----------- CONFIGURABLE START -----------
+title:            "Scribble"
+description:      "Such theme, very cool."
+url:              "https://yyw9969.github.io" # the base hostname & protocol for your site e.g. http://scribble.muan.co # Site url, without a slash at the end.
+baseurl:          ""
+signoff:          "muan" # Your name
+facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # Set tracking, remove from /javascripts/basic.js if unwanted.
+share:            false # Turn on twitter and facebook share buttons
+remote_theme :    Scribble Jekyll theme
+
+links:
+  - name:         Posts
+    url:          /
+    external:     false
+  - name:         About me
+    url:          /about
+    external:     false
+# ------------ CONFIGURABLE END ------------
+
+permalink:        /posts/:title
+defaults:
+  - values:
+      layout: "default"
+      
